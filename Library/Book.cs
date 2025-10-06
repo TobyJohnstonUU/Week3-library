@@ -35,7 +35,7 @@ namespace Library
 
         public void DisplayInfo()
         {
-            Console.WriteLine($"Book Title: {Title}");
+            Console.WriteLine($"Book Title: {title}");
             Console.WriteLine($"Book Author: {author}");
             Console.WriteLine($"Book ISBN: {isbn}\n");
         }
