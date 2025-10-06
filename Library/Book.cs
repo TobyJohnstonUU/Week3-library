@@ -4,23 +4,40 @@ namespace Library
 {
     internal class Book
     {
-        String Title;
-        String Author;
-        String ISBN;
+        private string title;
+        private string author;
+        private string isbn;
 
-
-        public Book(string title, string author, string iSBN)
+        public string Title
         {
-            Title = title;
-            Author = author;
-            ISBN = iSBN;
+            get { return title; }
+            set { title = value; }
+        }
+
+        public string Author
+        {
+            get { return author; }
+            set { author = value; }
+        }
+
+        public string ISBN
+        {
+            get { return isbn; }
+            set { isbn = value; }
+        }
+
+        public Book(string title, string author, string isbn)
+        {
+            this.Title = title;
+            this.Author = author;
+            this.ISBN = isbn;
         }
 
         public void DisplayInfo()
         {
             Console.WriteLine($"Book Title: {Title}");
-            Console.WriteLine($"Book Author: {Author}");
-            Console.WriteLine($"Book ISBN: {ISBN}");
+            Console.WriteLine($"Book Author: {author}");
+            Console.WriteLine($"Book ISBN: {isbn}\n");
         }
     }
 }
